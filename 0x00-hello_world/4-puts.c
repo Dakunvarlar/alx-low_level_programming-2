@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main -Prints "Programming is like building a multilingualpuzzle,followed by a new line.
+ * main -Prints "Programming is like building a multilingualpuzzle
  *
  * Return: Always 0.
  */
