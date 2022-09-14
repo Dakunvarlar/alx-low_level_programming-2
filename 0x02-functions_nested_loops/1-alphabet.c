@@ -2,12 +2,12 @@
 
 /**
  * print_alphabet - function to print letters 
- *
  * Return: Always 0
  */
 void print_alphabet(void)
-{
+i{
 	char c;
+
 	for (c = 'a'; c <= 'z'; c++)
 	{
 		_putchar(c);
