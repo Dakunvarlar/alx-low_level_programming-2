@@ -1,12 +1,13 @@
 #include "main.h"
+
 /**
  * _is alpha - function checks if c iuppercase
  * Return: 1 if c is uppercase
- * 	otherwise return 0
+ * Return: 0 on error
  */
 int _isupper(int c);
 {
-	if (c >= 'A' && c <= 'Z')
+	if (C >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
