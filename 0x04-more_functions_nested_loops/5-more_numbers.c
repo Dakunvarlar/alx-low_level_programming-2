@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * more_numbers - prints numbers 0-14 followed byy a new line 10 times
  * Return: Nothong
