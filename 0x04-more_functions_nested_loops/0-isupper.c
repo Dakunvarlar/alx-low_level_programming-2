@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * _is alpha - function checks if c iuppercase
- * Return: 1 if c is uppercase
- * Return: 0 on error
+ * _isaaa - function checks if c isuppercase
+ * @c: is the int to be used as argumentvoffunction.
+ * Return: 1 if c is uppercase otherwise 0
  */
 int _isupper(int c);
 {
-	if (c >= 'A' && c <= 'Z' )
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
 	else
-	return (0);
+		return (0);
 }
