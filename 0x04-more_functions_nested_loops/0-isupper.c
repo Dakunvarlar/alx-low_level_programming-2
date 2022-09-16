@@ -1,5 +1,5 @@
 /**
- * _isaaa - function checks if c isuppercase
+ * _isuppern - function checks if c isuppercase
  * @c: is the int to be used as argumentvoffunction.
  * case
  * Return: 1 if c is uppercase otherwise 0
