@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * _isuppern - function checks if c isuppercase
  * @c: is the int to be used as argumentvoffunction.
