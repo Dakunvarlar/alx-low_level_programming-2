@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * _isaaa - function checks if c isuppercase
  * @c: is the int to be used as argumentvoffunction.
