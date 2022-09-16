@@ -24,8 +24,9 @@ void print_number(int n)
 	}
 	sigfig--;
 
-	j = sigfig = 1;
+	j = sigfig;
 
+	sigfig = 1;
 	for (i = 1; i <= j; i++)
 	{
 		sigfig = sigfig * 10;
