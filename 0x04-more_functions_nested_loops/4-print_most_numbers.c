@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * void print_most_numbers(void) - prints digits 0-9 without 2 and 4
+ * void print_most_numbers(void) - prints digits 0-9 in ASCII
+ * without 2 and 4
  * Return: Nothing
  */
 
