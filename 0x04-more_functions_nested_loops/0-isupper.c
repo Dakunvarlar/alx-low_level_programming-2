@@ -3,6 +3,8 @@
 /**
  * _isaaa - function checks if c isuppercase
  * @c: is the int to be used as argumentvoffunction.
+ * Description: checks to see if character is in upper
+ * case
  * Return: 1 if c is uppercase otherwise 0
  */
 int _isupper(int c);
