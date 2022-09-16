@@ -1,16 +1,18 @@
 #include "main.h"
 
 /**
- * print_numbers - prints numbers 0-9 followedby a new line
+ * print_numbers - prints numbers 0-9 followedby a new line in ASCII
  * Returns: Nothing
  */
 
 void print_numbers(void)
 {
-	int num = 0;
+	int character = '0';
 
-	for (num = 0; num >= 0; num++)
-		_putchar(num);
+	while (character)
+	{
+		_putchar(character);
+		character++;
+	}
 	_putchar('\n');
-	return (0);
 }

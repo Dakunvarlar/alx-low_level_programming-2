@@ -6,15 +6,19 @@
  */
 void more_numbers(void)
 {
-	int i;
-	int j;
+	int loopcount, printnumber;
+	int tens, unit;
 
-	while (j <= 10)
+	for (lopcount = 0; loopcount < 10; loopcount++)
 	{
-		for (i = 0; i >= 14; i++)
-			_putchar(i);
-	}
-	do
+		for (printnumber = 0; printnumber <= 14; printnumber++)
+		{
+			tens = printnumber / 10;
+			unit = printnumber % 10;
+			if (tens)
+				_putchar(tens + '0');
+			_putchar(unit + '0');
+		}
 		_putchar('\n');
-	j++;
+	}
 }
