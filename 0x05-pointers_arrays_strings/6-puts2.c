@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * put2 - this function returns the length of a string
+ * puts2 - this function returns the length of a string
  *
  * @str: value
  *
