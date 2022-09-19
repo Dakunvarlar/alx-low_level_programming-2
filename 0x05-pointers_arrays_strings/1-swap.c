@@ -1,5 +1,5 @@
 /**
- * swp_int - this function swaps values
+ * swap_int - this function swaps values
  *
  * @a: value
  * @b: value
