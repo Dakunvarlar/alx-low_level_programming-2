@@ -18,7 +18,8 @@ char *rot13(char *s)
 	{
 		for (ii = 0; ii < 52; ii++)
 		{
-			if if (((s[i] <= 'z' && s[i] >= 'a') || (s[i] <= 'Z' && s[i] >= 'A')) && s[i] == input[ii])
+			if if (((s[i] <= 'z' && s[i] >= 'a') || (s[i] <= 'Z' && s[i] >= 'A'))
+					&& s[i] == input[ii])
 			{
 				s[i] = datarot[ii];
 				break;
