@@ -10,7 +10,7 @@ char *cap_string(char *s)
 {
 	int i;
 
-	for (i = 0; s[i] == s[0] && s[i] >= 'a' && s[i] <= 'z')
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == s[0] && s[i] >= 'a' && s[i] <= 'z')
 			s[i] -= 32;
