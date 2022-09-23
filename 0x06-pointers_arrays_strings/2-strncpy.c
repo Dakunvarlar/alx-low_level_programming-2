@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strncpy - this function concatinates two strings
+ * *_strncpy - this function concatinates two strings
  *
  * @dest: dest string
  * @src: src string
