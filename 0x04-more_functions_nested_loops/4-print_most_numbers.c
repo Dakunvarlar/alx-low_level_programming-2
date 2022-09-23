@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * void print_most_numbers(void) - prints digits 0-9 in ASCII
@@ -7,7 +6,7 @@
  * Return: Nothing
  */
 
-void print_most_numbers(void);
+void print_most_numbers(void)
 {
 	int i;
 
