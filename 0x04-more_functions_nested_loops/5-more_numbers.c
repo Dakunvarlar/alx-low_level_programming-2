@@ -5,18 +5,17 @@
  */
 void more_numbers(void)
 {
-	int loopcount, printnumber;
-	int tens, unit;
+	int i, j;
 
-	for (lopcount = 0; loopcount < 10; loopcount++)
+	for (j = 0; j < 10; j++)
 	{
-		for (printnumber = 0; printnumber <= 14; printnumber++)
+		for (i = 0; i <= 14; i++)
 		{
-			tens = printnumber / 10;
-			unit = printnumber % 10;
-			if (tens)
-				_putchar(tens + '0');
-			_putchar(unit + '0');
+			if (i >= 10)
+			{
+				_putchar((i / 10) + '0');
+			}
+			_putchar((i % 10) + '0');
 		}
 		_putchar('\n');
 	}
