@@ -6,19 +6,22 @@
  */
 void print_diagonal(int n)
 {
-	int numofline;
-	int numofspace;
+	int i, j;
 
-	for (numofline = 1; numofline <= n; numofline++)
+	if (n <= 0)
 	{
-		for (numofspace = 0; numofspace < numofile - 1; numofspace++)
-		{
-			_putchar(' ');
-		}
-		_putchar('\\');
 		_putchar('\n');
 	}
-
-	if (n < 1)
-		_putcha('\n');
+	else
+	{
+		for (i = 1; i <= n; i++)
+		{
+			for (j = 1; j < i; j++)
+			{
+				_putchar(' ');
+			}
+			_putchar('\\');
+			_putchar('\n');
+		}
+	}
 }
