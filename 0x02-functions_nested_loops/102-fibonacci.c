@@ -1,30 +1,30 @@
-#include "main.h"
 #include <stdio.h>
+
 /**
- * main - program prints every minute
- *
- * Return: sum
+ * main - program prints first 50 Fibonacci numbers,
+ * starting with 1 and 2 followed by a new line.
+ * Return: Always ) (Success)
  */
 int main(void)
 {
-	long n = 0;
-	long term1 = 1;
-	long term2 = 2;
-	long nextTerm = term1 = term2;
+	long int i, j, k, next;
 
-	printf("%ld, %ld, ", term 1, term2);
+	j = 1;
+	k = 2;
 
-	for (n = 0; n <= 47; n++)
+	for (i = 1; i <= 50; ++i)
 	{
-		printf("%ld", nextTerm);
-		if (n < 47)
+		if (j != 20365011074)
 		{
-			printf(", ");
+		printf("%ld, ", j);
 		}
-		term1 = term2;
-		term2 = nextTerm;
-		nextTerm = term1 + term2;
+		else
+		{
+			printf("%ld\n", j);
+		}
+		next = k + j;
+		j = k;
+		k = mext;
 	}
-	printf("\n");
 	return (0);
 }
