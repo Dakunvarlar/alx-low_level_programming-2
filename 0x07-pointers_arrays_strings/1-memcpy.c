@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * _memcpy - this function copies memory area
  *
  * @dest: where the src wit get copied
