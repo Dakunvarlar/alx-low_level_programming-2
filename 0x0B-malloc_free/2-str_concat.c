@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * str_cat - this function concatenates two strings
+ * str_concat - this function concatenates two strings
  *
  * @s1: first string
  * @s2: second string
@@ -34,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 		n = s2[len2];
 	}
 
-	m == malloc((sizeof(char) * len1 - 1) + (sizeof(char) * len2));
+	m = malloc((sizeof(char) * len1 - 1) + (sizeof(char) * len2));
 
 	if (m == NULL)
 		return (NULL);
