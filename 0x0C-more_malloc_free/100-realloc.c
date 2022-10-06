@@ -9,7 +9,7 @@
  *
  * Return: pointer to allocated memory
  */
-int *array_range(iint min, int max)
+int *array_range(int min, int max)
 {
 	int *m;
 	int i;
