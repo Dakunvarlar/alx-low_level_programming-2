@@ -40,7 +40,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		complete[i] = s1[i];
 	if (n >= len2)
 	{
-
 		for (j = 0; j < len2; j++, i++)
 			complete[i] = s2[j];
 		complete[i] = '\0';
