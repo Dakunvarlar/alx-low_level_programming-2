@@ -1,29 +1,31 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 /**
- * array_range - creates an array of integers
+ * _realloc - re_allocates a memory block
+ * @ptr: pointer to the memory previously allocated.
+ * @old_size: size, in bytes, of all allocated space of ptr.
+ * @new_size: new size, in bytes, of the new memory block.
  *
- * @min: values from included
- * @max: from this
- *
- * Return: pointer to allocated memory
+ * Return: ptr
+ * if new_siz == old_size, return ptr without changes.
+ * if malloc fails, returns NULL.
  */
-int *array_range(int min, int max)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	int *m;
-	int i;
-	int x = min;
-
-	if (min > max)
-		return (NULL);
-	m = malloc(sizeof(int) * ((max + 1) - (min)));
-	if (m == NULL)
-		return (NULL);
-	for (i = 0; x <= max; i++)
+	if (new_size == 0 && ptr != NULL)
 	{
-		m[i] = x;
-		x++;
+		free(ptr);
+		return (NULL);
 	}
-	return (m);
+
+	if (ptr == NULL)
+		ptr = malloc(new_size);
+
+	if (new_size == old_size)
+		return (ptr);
+
+	free(ptr);
+	ptr = malloc(new_size);
+
+	return (ptr);
 }
