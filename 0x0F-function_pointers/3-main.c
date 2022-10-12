@@ -1,8 +1,8 @@
 #include "3-calc.h"
 /**
  * main - calculator
- * @argv: argument passed by user
- * @argc: number of arguments passed by user
+ * @argv: argument vector
+ * @argc: arguments count
  * Return: 0
  */
 int main(int argc, char *argv[])
