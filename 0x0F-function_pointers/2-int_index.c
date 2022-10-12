@@ -3,7 +3,7 @@
 /**
  * int_index - searches for integer
  * @array: array
- * @size: size of array
+ * @size: size of the array
  * @cmp: pointer to comparison function
  * Return: index
  */
