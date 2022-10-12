@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * main - prints the opcodes of itself
- * @argc: The number of arguments supplied to the program
- * @argv: An array of pointers to the arguments
+ * main - checks the code for Holberton School students
+ * @argc: arguments count
+ * @argv: arguments vector
  *
  * Return: Always 0.
  */
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	for (index = 0; i < nbytes; i++)
+	for (i = 0; i < nbytes; i++)
 	{
 		printf("%02x", opc[i] & 0xFF);
 		if (i != nbytes - 1)
