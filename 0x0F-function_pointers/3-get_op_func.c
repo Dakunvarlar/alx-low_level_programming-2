@@ -1,9 +1,9 @@
-#include <stdio.h>
-#include <string.h>
 #include "3-calc.h"
 /**
- * get_op_func - main takes the op func from here
- * @s: oper
+ * get_op_func -selects the correct function to perform
+ * operation asked by user
+ * @s: char operator
+ *
  * Return: correct function
  */
 int (*get_op_func(char *s))(int, int)
@@ -18,11 +18,11 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (op[i].op != NULL)
+	while (i < 10)
 	{
-		if (strcmp(s, ops[i].op) == 0)
+		if (s[0] == ops->op[i])
 			break;
 		i++;
 	}
-	return (ops[i].f);
+	return (ops[i / 2].f);
 }
