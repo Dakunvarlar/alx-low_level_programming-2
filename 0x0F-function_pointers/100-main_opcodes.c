@@ -30,14 +30,10 @@ int main(int argc, char *argv[])
 
 	for (index = 0, index < bytes; index++)
 	{
-		opcode = *(unsigned char *)address;
-		printf("%02x", opcode);
+		printf("%02x", opcode[index] & 0xFF);
 
-		if (index == bytes - 1)
-			continue;
-		printf(" ");
-
-		address++;
+		if (index != bytes - 1)
+			printf(" ");
 	}
 	printf("\n");
 
