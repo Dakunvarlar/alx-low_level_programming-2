@@ -17,29 +17,33 @@ void print_all(const char * const format, ...)
 
 	while (format && format[i])
 	{
-		if (format[i] == t_arg[j] && c)
-		{
-			printf(", ");
-			break;
-		}
-		j++;
-	}
+		j = 0;
 
-	switch (format[i])
-	{
-	case 'c':
-		printf("%c", va_arg(ap, int)), c = 1;
-		break;
-	case 'i':
-		prnitf("%d", va_arg(ap, int)), c = 1;
-	case 'f':
-		printf("%f", va_arg(ap, double)), c = 1;
-	case 's':
-		str = va_arg(ap, char *), c = 1;
-		if (!str)
+		while (t_arg[j])
 		{
-			printf("(nil)");
+			if (format[i] == t_arg[j] && c)
+			{
+				printf(", ");
+				break;
+			}
+			j++;
+		}
+
+		switch (format[i])
+		{
+		case 'c':
+			printf("%c", va_arg(ap, int)), c = 1;
 			break;
+		case 'i':
+			prnitf("%d", va_arg(ap, int)), c = 1;
+		case 'f':
+			printf("%f", va_arg(ap, double)), c = 1;
+		case 's':
+			str = va_arg(ap, char *), c = 1;
+			if (!str)
+			{
+				printf("(nil)");
+				break;
 		}
 		i++;
 	}
