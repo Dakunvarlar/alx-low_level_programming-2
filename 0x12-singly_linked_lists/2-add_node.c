@@ -1,19 +1,38 @@
 #include "lists.h"
 /**
- *  list_len - this function count the elements in a linked list
- *  @h: pointer to list
- *  Return: number of elements in list
+ * _strlen - this function return the legth of a string
+ * @s: value@s: value
+ *
+ * Return: value
  */
-size_t list_len(const list_t *h)
+int _strlen(const char *s)
 {
-	unsigned int elementNum = 0;
+	char n;
+	int i;
 
-	while (h != NULL)
+	for (i = 0; (n != '\0'); i++)
 	{
-		/*if (h->str == NULL)*/
-			/*break;*/
-		h = h->next;
-		elementNum++;
+		n = s[i];
 	}
-	return (elementNum);
+	return (i - 1);
+}
+/**
+ * add_node - this function adds a new node at the beginning
+ * @head: pointer to list
+ * @str: string to duplicate
+ * Return: address of the new element or NULL if fails
+ */
+list_t *add_node(list_t **head, const char *str)
+{
+	list_t *temp;
+
+	temp = (list_t *) malloc(sizeof(list_t));
+	if (temp == NULL)
+		return (NULL);
+	temp->str = strdup(str);
+	temp->len = _strlen(str);
+	temp->next = *head;
+	*head = temp;
+
+	return (*head);
 }
