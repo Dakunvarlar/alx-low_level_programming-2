@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * listsint_len - this function counts the elements in a link of ints list
+ * listint_len - this function counts the elements in a link of ints list
  * @h: pointer to list
  * Return: number of elements in list
  */
